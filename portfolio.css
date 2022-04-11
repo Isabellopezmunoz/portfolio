@@ -1,0 +1,148 @@
+/* -------- global styles -------------------- */
+:root {
+  --color-dark: #131527;
+  --color-dark-200: #1B1D32;
+  --color-dark-100: #3F3D56;
+  --color-pink: #F94370;
+  --color-pink-200: #F96F91;
+  --color-pink-100: #FDD9E2;
+  --color-white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--color-dark-100);
+}
+
+/* -------------- font styles ----------------- */
+.font-title {
+  font-weight: 500;
+  font-size: 4rem;
+  color: var(--color-white);
+}
+
+.font-subtitle {
+  font-weight: 500;
+  font-size: 3rem;
+  color: var(--color-white);
+}
+
+.font-paragraph {
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--color-white);
+}
+
+/* --------------- Header component ------------ */
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__line {
+  width: 8rem;
+  height: 0.5rem;
+  margin: 4rem 0 0 4rem;
+  background-color: var(--color-pink);
+  border-radius: 1rem;
+}
+
+.header__title-container {
+  height: 1rem;
+}
+
+/* --------- about me section ----------------------*/
+.aboutme {
+  display: grid;
+  grid-template-rows: 5rem auto;
+  height: 100vh;
+}
+
+.aboutme__logo {
+  margin-top: 8rem;
+  display: flex;
+  justify-content:  center;
+}
+
+.aboutme__logo img {
+  width: 12rem;
+  height: 12rem;
+}
+
+.aboutme__section  {
+  margin-top: 9rem;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutme__section p {
+  margin-left: 6rem;
+  margin-right: 2rem;
+}
+
+.aboutme__button-container {
+  width: 100%;
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.aboutme__button-contact {
+  width: 18rem;
+  height: 5rem;
+  border-radius: 1rem;
+  background-color: var(--color-pink);
+  transition: all 1s ease;
+  position: relative;
+}
+
+.aboutme__button-contact:hover {
+  background: var(--color-pink-100);
+}
+
+.aboutme__sheet-container {
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: end;
+}
+
+.logo-sheet {
+  width: 12rem;
+  height: 12rem;
+}
+
+
+
+
+/* --------- skills section ----------------------*/
+.skills {
+  display: grid;
+  grid-template-rows: 5rem calc(100vh - 5rem);
+}
+
+/* --------- projects section ----------------------*/
+.projects {
+  display: grid;
+  grid-template-rows: 100vh;
+}
+
+/* --------- contact section ----------------------*/
+.contact {
+  display: grid;
+  grid-template-rows: 100vh;
+}
