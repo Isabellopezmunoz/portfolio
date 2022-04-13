@@ -31,7 +31,7 @@
       </section>
 
       <div class="aboutme__button-container">
-        <button class="aboutme__button-contact font-subtitle">Contact Me <a href=""></a></button>
+        <a class="aboutme__button-contact font-subtitle" href="#contact">Contact Me</a>
       </div>
 
       <div class="aboutme__sheet-container">
@@ -93,19 +93,38 @@
       <div class="projects-container__blog">
         <div class="projects-container__image-blog">
           <img class="projects-image__blog" src="./assets/girl-blog.svg" alt="girl with pc">
+          <button class="projects-button__blog">Mi Blog</button>
         </div>
-        <button class="projects-button__blog">Mi Blog</button>
       </div>
     </main>
   </div>
 <!--------------------- contact --------------------->
-  <div class="contact">
+  <div class="contact" id="contact">
     <header class="header">
       <div class="header__line"></div>
       <h1 class="font-subtitle">Contact</h1>
     </header>
-    <main class="contact__main">
-    </main>
+    <form class="contact__container">
+      <label class="contact-field" for="name">
+        <span>Name</span>
+        <input class="contact-field__input" type="name">
+        <img class="contact-field__icon" src="./assets/icon-user.svg" alt="icon of user">
+      </label>
+
+      <label class="contact-field" for="email">
+        <span>E-mail</span>
+        <input class="contact-field__input" type="email">
+        <img class="contact-field__icon" src="./assets/icon-arroba.svg" alt="icon of email">
+      </label>
+
+      <label class="contact-field" for="message">
+        <span>Message</span>
+        <textarea class="contact-field__input" rows="4" cols="50"></textarea>
+        <img class="contact-field__icon" src="./assets/icon-message.svg" alt="icon of message">
+      </label>
+
+      <button class="contact-button">Send</button>
+    </form>
   </div>
 </body>
 </html>

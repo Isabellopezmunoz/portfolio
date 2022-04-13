@@ -62,7 +62,7 @@ body {
 .aboutme {
   background: var(--color-dark);
   display: grid;
-  grid-template-rows: 5rem calc(100vh - 5rem);
+  grid-template-rows: 5rem auto;
   height: 100vh;
 }
 
@@ -107,7 +107,11 @@ body {
   width: 18rem;
   height: 5rem;
   border-radius: 1rem;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem 0.5rem;
   background-color: var(--color-pink);
+  color: var(--color-white);
 }
 
 .aboutme__sheet-container {
@@ -125,7 +129,7 @@ body {
 /* --------- skills section ----------------------*/
 .skills {
   display: grid;
-  grid-template-rows: 5rem calc(100vh - 5rem);
+  grid-template-rows: 5rem auto;
   background: var(--color-dark-200);
 }
 
@@ -144,6 +148,7 @@ body {
   list-style: none;
   display: grid;
   gap: 1rem;
+  padding: 3rem;
 }
 
 .skills-container__list li {
@@ -188,24 +193,26 @@ body {
 /* --------- projects section ----------------------*/
 .projects {
   display: grid;
-  grid-template-rows: 5rem calc(100vh - 5rem);
+  grid-template-rows: 5rem auto;
   background: var(--color-dark);
 }
 
 .projects__main {
   display: grid;
-  grid-template-rows: auto 40rem;
+  grid-template-rows: auto auto;
+  padding: 3rem 0;
+  gap: 3rem;
 }
 
 .projects-container__teashop {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .projects-image__teashop {
   width: 20rem;
   height: 20rem;
-  position: absolute;
-  margin: 7rem 5rem 4rem 5rem;
 }
 
 .projects-button__teashop {
@@ -216,11 +223,15 @@ body {
   background: var(--color-pink);
   color: var(--color-white);
   position: absolute;
-  margin: 15rem 9rem 15rem 11rem;
+  top: 6rem;
+  left: 11rem;
+  cursor: pointer;
 }
 
 .projects-container__blog {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .projects-container__image-blog {
@@ -228,15 +239,13 @@ body {
   height: 20rem;
   background: var(--color-pink-200);
   border-radius: 1rem;
-  position: relative;
-  margin: 7rem 5rem 4rem 5rem;
 }
 
 .projects-image__blog {
   width: 20rem;
   height: 20rem;
   position: absolute;
-  margin: 0.5rem 5rem 4rem 5rem;
+  right: 2rem;
 }
 
 .projects-button__blog {
@@ -246,13 +255,72 @@ body {
   border-radius: 1rem;
   background: var(--color-pink);
   color: var(--color-white);
-  /* position: absolute; */
-  /* margin: 0rem 4rem 10rem 6.5rem; */
+  position: absolute;
+  right: 12.5rem;
+  bottom: 3.3rem;
+  cursor: pointer;
+
 }
 /* --------------contact section----------------------- */
 
 .contact {
   display: grid;
-  grid-template-rows: 5rem calc(100vh - 5rem);
-  background: var(--color-dark);
+  grid-template-rows: 5rem auto;
+  background: var(--color-dark-200);
 }
+
+.contact__container {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  padding: 3rem 0;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.contact-field {
+  position: relative;
+  padding: 1rem 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 18rem;
+}
+
+.contact-field span {
+  width: 100%;
+  display: block;
+}
+
+.contact-field__input {
+  outline: none;
+  height: 3rem;
+  border: none;
+  border-radius: 0.2rem;
+  border-bottom: 0.2rem solid var(--color-pink);
+  padding-left: 2.5rem;
+  width: 100%;
+}
+
+.contact-field:nth-child(3) .contact-field__input {
+  height: auto;
+}
+
+.contact-field__icon {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 2rem;
+  height: 1.5rem;
+}
+
+.contact-button {
+  width: 18rem;
+  border: none;
+  height: 3rem;
+  border-radius: 1rem;
+  background: var(--color-pink);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+
+
