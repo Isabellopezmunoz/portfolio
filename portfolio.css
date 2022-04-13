@@ -107,6 +107,9 @@ body {
   width: 18rem;
   height: 5rem;
   border-radius: 1rem;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem 0.5rem;
   background-color: var(--color-pink);
   color: var(--color-white);
 }
@@ -222,6 +225,7 @@ body {
   position: absolute;
   top: 6rem;
   left: 11rem;
+  cursor: pointer;
 }
 
 .projects-container__blog {
@@ -254,6 +258,7 @@ body {
   position: absolute;
   right: 12.5rem;
   bottom: 3.3rem;
+  cursor: pointer;
 
 }
 /* --------------contact section----------------------- */
@@ -314,5 +319,8 @@ body {
   border-radius: 1rem;
   background: var(--color-pink);
   color: var(--color-white);
+  cursor: pointer;
 }
+
+
 
