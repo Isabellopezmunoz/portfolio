@@ -147,6 +147,7 @@ body {
 .skills-container__list {
   list-style: none;
   display: grid;
+  justify-content: center;
   gap: 1rem;
   padding: 3rem;
 }
