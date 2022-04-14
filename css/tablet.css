@@ -1,0 +1,36 @@
+.aboutme__section p {
+  width: 40rem;
+}
+
+.skills-container__list {
+  padding-top: 10rem;
+  gap: 3rem;
+}
+
+.skills-container__list li {
+  height: 4rem;
+  width: 15rem;
+}
+
+.projects-container__image-blog {
+  position: relative;
+}
+
+.projects-container__teashop div {
+  position: relative;
+}
+
+.projects-button__teashop {
+  left: 6rem;
+}
+
+.contact__container form {
+  width: 50rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.contact-field {
+  width: 100%;
+}

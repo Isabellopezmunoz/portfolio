@@ -90,6 +90,7 @@ body {
 
 .aboutme__section p {
   text-align: center;
+  width: 30rem;
 }
 
 .aboutme__section p span {
@@ -225,7 +226,7 @@ body {
   color: var(--color-white);
   position: absolute;
   top: 6rem;
-  left: 11rem;
+  left: 12rem;
   cursor: pointer;
 }
 
@@ -271,10 +272,16 @@ body {
 }
 
 .contact__container {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
-  padding: 3rem 0;
-  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.contact__container form {
+  width: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
   justify-content: center;
 }
 
