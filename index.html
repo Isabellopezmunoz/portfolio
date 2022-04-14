@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./portfolio.css">
+  <link rel="stylesheet" href="./css/portfolio.css">
+  <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px)">
 </head>
 <body>
   <!-----------------about me section ------------->
@@ -84,10 +85,12 @@
 
     <main class="projects__main">
       <div class="projects-container__teashop">
-        <figure>
-          <img class="projects-image__teashop" src="./assets/Hands Tea bag.svg" alt="tea bag">
-        </figure>
-        <button class="projects-button__teashop">Tea Shop</button>
+        <div>
+          <figure>
+            <img class="projects-image__teashop" src="./assets/Hands Tea bag.svg" alt="tea bag">
+          </figure>
+          <button class="projects-button__teashop">Tea Shop</button>
+        </div>
       </div>
 
       <div class="projects-container__blog">
@@ -104,27 +107,29 @@
       <div class="header__line"></div>
       <h1 class="font-subtitle">Contact</h1>
     </header>
-    <form class="contact__container">
-      <label class="contact-field" for="name">
-        <span>Name</span>
-        <input class="contact-field__input" type="name">
-        <img class="contact-field__icon" src="./assets/icon-user.svg" alt="icon of user">
-      </label>
+    <div class="contact__container">
+      <form>
+        <label class="contact-field" for="name">
+          <span>Name</span>
+          <input class="contact-field__input" type="name">
+          <img class="contact-field__icon" src="./assets/icon-user.svg" alt="icon of user">
+        </label>
 
-      <label class="contact-field" for="email">
-        <span>E-mail</span>
-        <input class="contact-field__input" type="email">
-        <img class="contact-field__icon" src="./assets/icon-arroba.svg" alt="icon of email">
-      </label>
+        <label class="contact-field" for="email">
+          <span>E-mail</span>
+          <input class="contact-field__input" type="email">
+          <img class="contact-field__icon" src="./assets/icon-arroba.svg" alt="icon of email">
+        </label>
 
-      <label class="contact-field" for="message">
-        <span>Message</span>
-        <textarea class="contact-field__input" rows="4" cols="50"></textarea>
-        <img class="contact-field__icon" src="./assets/icon-message.svg" alt="icon of message">
-      </label>
+        <label class="contact-field" for="message">
+          <span>Message</span>
+          <textarea class="contact-field__input" rows="4" cols="50"></textarea>
+          <img class="contact-field__icon" src="./assets/icon-message.svg" alt="icon of message">
+        </label>
 
-      <button class="contact-button">Send</button>
-    </form>
+        <button class="contact-button">Send</button>
+      </form>
+    </div>
   </div>
 </body>
 </html>
