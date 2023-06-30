@@ -8,128 +8,179 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/portfolio.css">
-  <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="./css/styles.css" media="screen">
+  <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px) and (max-width: 1024px)">
 </head>
 <body>
+
   <!-----------------about me section ------------->
-  <div class="aboutme">
-    <header class="header">
-      <div class="header__line"></div>
-      <h1 class="font-subtitle">About me</h1>
-    </header>
-
-    <main class="aboutme__main">
-      <div class="aboutme__logo">
-        <img src="./assets/logo-aboutme.svg" alt="logo de belcode">
+  <header class="header">
+    <section class="detail">
+      <p class="role">
+        Frontend Developer
+      </p>
+      <h1 class="title">
+        Hola, mi nombre es Isabel López
+      </h1>
+      <p class="description">
+        Soy una persona que está en constante aprendizaje,
+        proactiva y con ganas de aprender.
+        Y gracias a ello llevo sumergida en el mundo
+         de la programación desde hace 2 años.
+      </p>
+      <div class="social">
+        <a class="button primary" href="mailto:bel.lopez.code@gmail.com" target="__blank">Contact</a>
+        <a class="button outline" href="https://www.linkedin.com/in/isabel-l%C3%B3pez-602b90144/" target="__blank">LinkedIn</a>
       </div>
-
-      <section class="aboutme__section">
-        <p class="font-subtitle">
-          Hey!! I´m <span>Isabel</span> an apassionade <span>frontend</span>
-          developer. Do you want to meet me?
-        </p>
-      </section>
-
-      <div class="aboutme__button-container">
-        <a class="aboutme__button-contact font-subtitle" href="#contact">Contact Me</a>
-      </div>
-
-      <div class="aboutme__sheet-container">
-        <img class="logo-sheet" src="./assets/sheet.svg" alt="logo de una hoja">
-      </div>
-    </main>
-  </div>
-<!-----------------skills section ----------------->
-  <div class="skills">
-    <header class="header">
-      <div class="header__line"></div>
-      <h1 class="font-subtitle">Skills & Tools</h1>
-    </header>
-
-    <main class="skills__main">
-      <div class="skills-container">
-        <figure>
-          <img class="icon__pink2" src="./assets/icon__pink2.svg" alt="icono rosado">
-        </figure>
-
-        <ul class="skills-container__list">
-          <li>Html</li>
-          <li>Css</li>
-          <li>Sass</li>
-          <li>javascript</li>
-          <li>Vue</li>
-          <li>Boostrap</li>
-          <li>Figma</li>
-          <li>Vercel</li>
+    </section>
+    <div class="aboutme">
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
         </ul>
-      </div>
-
-      <div class="skills__icon-container">
+      </nav>
+      <div class="profile">
         <figure>
-        <img class="icon__pink"  src="./assets/icon__pink.svg" alt="icon pink">
-        </figure>
-
-        <figure>
-        <img class="icon__pink1" src="./assets/icon__pink1.svg" alt="icon pink">
         </figure>
       </div>
-    </main>
-  </div>
-<!------------------- projects section ------------>
-  <div class="projects">
-    <header class="header">
-      <div class="header__line"></div>
-      <h1 class="font-subtitle">Projetcs</h1>
-    </header>
-
-    <main class="projects__main">
-      <div class="projects-container__teashop">
-        <div>
-          <figure>
-            <img class="projects-image__teashop" src="./assets/Hands Tea bag.svg" alt="tea bag">
-          </figure>
-          <button class="projects-button__teashop">Tea Shop</button>
-        </div>
-      </div>
-
-      <div class="projects-container__blog">
-        <div class="projects-container__image-blog">
-          <img class="projects-image__blog" src="./assets/girl-blog.svg" alt="girl with pc">
-          <button class="projects-button__blog">Mi Blog</button>
-        </div>
-      </div>
-    </main>
-  </div>
-<!--------------------- contact --------------------->
-  <div class="contact" id="contact">
-    <header class="header">
-      <div class="header__line"></div>
-      <h1 class="font-subtitle">Contact</h1>
-    </header>
-    <div class="contact__container">
-      <form>
-        <label class="contact-field" for="name">
-          <span>Name</span>
-          <input class="contact-field__input" type="name">
-          <img class="contact-field__icon" src="./assets/icon-user.svg" alt="icon of user">
-        </label>
-
-        <label class="contact-field" for="email">
-          <span>E-mail</span>
-          <input class="contact-field__input" type="email">
-          <img class="contact-field__icon" src="./assets/icon-arroba.svg" alt="icon of email">
-        </label>
-
-        <label class="contact-field" for="message">
-          <span>Message</span>
-          <textarea class="contact-field__input" rows="4" cols="50"></textarea>
-          <img class="contact-field__icon" src="./assets/icon-message.svg" alt="icon of message">
-        </label>
-
-        <button class="contact-button">Send</button>
-      </form>
     </div>
+  </header>
+
+  <!-- project -->
+  <div id="projects" class="projects">
+    <h2 class="section font-title">Projects</h2>
+    <div class="projects__main">
+      <div class="projects__cards">
+        <div class="project__card">
+          <p class="font-subtitle">Personality</p>
+          <p class="font-paragraph">Aplicación web SPA para
+            la gestión de las finanzas y objetivos personales.
+          </p>
+          <a class="button outline rounded" href="https://personality.jscodelab.com" target="__blank">Proyecto</a>
+        </div>
+        <figure class="project__image">
+          <img src="./assets/login-image.svg" alt="personality-image">
+        </figure>
+      </div>
+
+      <div class="projects__cards">
+        <div class="project__card">
+          <p class="font-subtitle">Onuba prisiones</p>
+          <p class="font-paragraph">Aplicación web SPA para la
+            preparación de oposiciones para funcionarios de prisiones.
+          </p>
+          <a class="button outline rounded" href="https://backoffice.onubaprisiones.app" target="__blank">Proyecto</a>
+        </div>
+        <figure class="project__image">
+          <img src="./assets/prisiones.jpg" alt="onuba-prisiones-image">
+        </figure>
+      </div>
+
+      <div class="projects__cards">
+        <figure class="project__image-left">
+          <img src="./assets/myshopper.jpg" alt="myShopper-image">
+        </figure>
+        <div class="project__card">
+          <p class="font-subtitle">My Shopper</p>
+          <p class="font-paragraph">Aplicación web
+            SPA para el control  de compras  personales.
+          </p>
+          <a class="button outline rounded" href="https://myshopper.slow-soul.com" target="__blank">Proyecto</a>
+        </div>
+      </div>
+
+      <div class="projects__cards">
+        <figure class="project__image-left">
+          <img src="./assets/blog.jpg" alt="slow-soul-image">
+        </figure>
+        <div class="project__card">
+          <p class="font-subtitle">Slow Soul</p>
+          <p class="font-paragraph">Blog personal en el que hablo acerca de sostenibilidad y consumo responsable.
+            Está realizado  con wordpress.
+          </p>
+          <a class="button outline rounded" href="https://slow-soul.com" target="__blank">Proyecto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- skills -->
+  <div id="skills" class="skills">
+    <h2 class="section font-title">Skills & Tools</h2>
+    <div class="skill-list">
+      <figure class="skill">
+        <img src="./assets/html-5.jpeg" alt="html5" height="100" width="100">
+        <figcaption>HTML 5</figcaption>
+      </figure>
+
+      <figure class="skill">
+        <img src="./assets/css3.png" alt="html5" height="100" width="100">
+        <figcaption>CSS 3</figcaption>
+      </figure>
+
+      <figure class="skill">
+        <img src="./assets/js.png" alt="html5" height="100" width="100">
+        <figcaption>Js</figcaption>
+      </figure>
+
+       <figure class="skill">
+        <img src="./assets/axios.png" alt="html5" height="100" width="100">
+        <figcaption>Axios</figcaption>
+      </figure>
+
+       <figure class="skill">
+        <img src="./assets/vue.png" alt="html5" height="100" width="100">
+        <figcaption>Vue Js</figcaption>
+      </figure>
+
+       <figure class="skill">
+        <img src="./assets/Swagger-logo.png" alt="html5" height="100" width="100">
+        <figcaption>Swagger</figcaption>
+      </figure>
+
+       <figure class="skill">
+        <img src="./assets/figma.png" alt="html5" height="100" width="100">
+        <figcaption>Figmma</figcaption>
+      </figure>
+
+       <figure class="skill">
+        <img src="./assets/vercel.png" alt="html5" height="100" width="100">
+        <figcaption>Vercel</figcaption>
+      </figure>
+
+      <figure class="skill">
+        <img src="./assets/typescript.svg" alt="html5" height="100" width="100">
+        <figcaption>TypeScript</figcaption>
+      </figure>
+
+      <figure class="skill">
+        <img src="./assets/api rest.png" alt="html5" height="100" width="100">
+        <figcaption>API REST</figcaption>
+      </figure>
+
+      <figure class="skill">
+        <img src="./assets/Git.png" alt="html5" height="100" width="100">
+        <figcaption>GIT</figcaption>
+      </figure>
+
+        <figure class="skill">
+        <img src="./assets/postcss.png" alt="html5" height="100" width="100">
+        <figcaption>Postcss</figcaption>
+      </figure>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>2023 - Isabel López</p>
   </div>
 </body>
 </html>

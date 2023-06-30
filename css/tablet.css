@@ -1,36 +1,37 @@
-.aboutme__section p {
-  width: 40rem;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .projects {
+    padding-left: 10rem;
+
+    & .projects__main {
+      grid-template-columns: 1fr;
+    }
+
+  }
+
+  .skills {
+    padding-left: 3rem;
+
+    & .skill-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .footer {
+    height: 29rem;
+    width: 1000px;
+
+    & p {
+      display: none;
+    }
+  }
+
+  .profile {
+    width: 600px;
+  }
+
+  .section {
+    padding-left: 10rem;
+  }
 }
 
-.skills-container__list {
-  padding-top: 10rem;
-  gap: 3rem;
-}
 
-.skills-container__list li {
-  height: 4rem;
-  width: 15rem;
-}
-
-.projects-container__image-blog {
-  position: relative;
-}
-
-.projects-container__teashop div {
-  position: relative;
-}
-
-.projects-button__teashop {
-  left: 6rem;
-}
-
-.contact__container form {
-  width: 50rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-
-.contact-field {
-  width: 100%;
-}

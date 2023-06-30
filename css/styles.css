@@ -1,0 +1,266 @@
+:root {
+  --color-dark: #131527;
+  --color-dark-200: #1B1D32;
+  --color-dark-100: #3F3D56;
+  --color-yellow: #FDC435;
+  --color-yellow-100: #FFE681;
+  --color-yellow-50: #fff6cf;
+  --color-gray-300: #828282;
+  --color-gray-100: #f6f6f6;
+  --color-green: #09c2c9;
+  --color-green-100: #c1fafc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: var(--color-gray-100);
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--color-dark);
+}
+
+/* --------- utilities --------- */
+.button {
+  display: inline-flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.button.primary {
+  background: var(--color-yellow);
+}
+
+.button.outline {
+  border: 1px solid var(--color-dark);
+}
+
+.button.rounded {
+  border-radius: 2rem;
+}
+
+.font-title {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.font-subtitle {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.font-paragraph {
+  color: var(--color-gray-300);
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 4rem 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 0.3rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    background: var(--color-yellow);
+    bottom: -1rem;
+  }
+}
+
+/* ---------------------------- */
+
+.header {
+  display: grid;
+  grid-template-columns: auto 50rem;
+}
+
+.header .detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 8rem;
+
+  & .role {
+    font-size: 3rem;
+    color: var(--color-yellow);
+  }
+
+  & .title {
+    font-size: 5rem;
+  }
+
+  & .description {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    color: var(--color-gray-300);
+  }
+
+  & .social {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.header .aboutme {
+  position: relative;
+
+  & nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 2rem;
+    padding-right: 10rem;
+    position: absolute;
+  }
+
+  & nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  & nav ul li {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  & figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60rem;
+  }
+
+  & .profile {
+    background-image: url("../assets/profile-wrapper.svg");
+    background-size: cover;
+  }
+}
+
+
+/* ---------------------------------projects--------------------------------- */
+
+.projects__main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 8rem;
+  gap: 2rem 0;
+  justify-items: center;
+}
+
+.projects__cards {
+  width: 60rem;
+  height: 25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.project__card {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  gap: 2rem;
+  background: white;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.project__image {
+  width: 100%;
+  height: 25rem;
+
+  & img {
+    border-top-right-radius: 0.5rem ;
+    border-bottom-right-radius: 0.5rem ;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.project__image-left {
+  width: 100%;
+  height: 25rem;
+
+  & img {
+    border-top-left-radius: 0.5rem ;
+    border-bottom-left-radius: 0.5rem ;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* ----------------------------------------------Skills------------------------------------------- */
+.skills {
+  padding: 2rem;
+
+  & .skill-list {
+    display: grid;
+    gap: 2rem 0;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 16rem;
+  }
+
+  & .skill {
+    background: white;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  }
+
+  & .skill figcaption {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}
+
+/* -------------------------------footer--------------------- */
+.footer {
+  background-image: url("../assets/footer.svg");
+  background-size: cover;
+  height: 28rem;
+  position: relative;
+
+  & p {
+    position: absolute;
+    bottom: 1rem;
+    left: 45%;
+  }
+}
