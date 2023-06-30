@@ -1,36 +1,21 @@
 @media (min-width: 768px) and (max-width: 1024px) {
-  .projects {
-    padding-left: 10rem;
-
-    & .projects__main {
-      grid-template-columns: 1fr;
-    }
-
+  .projects__main {
+    grid-template-columns: 1fr;
   }
 
-  .skills {
-    padding-left: 3rem;
-
-    & .skill-list {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  .skill-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   .footer {
-    height: 29rem;
-    width: 1000px;
-
-    & p {
-      display: none;
-    }
+    display: none;
   }
 
-  .profile {
-    width: 600px;
-  }
-
-  .section {
-    padding-left: 10rem;
+  .header .aboutme nav {
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
   }
 }
 
