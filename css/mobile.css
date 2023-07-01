@@ -1,0 +1,65 @@
+@media (max-width: 767px) {
+  .section::before {
+    display: none;
+  }
+
+  .header {
+    grid-template-columns: 1fr;
+  }
+
+  .header .aboutme nav {
+    display: none;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .projects__main {
+    grid-template-columns: 1fr;
+  }
+
+  .projects__cards {
+    width: 20rem;
+    height: 25rem;
+    grid-template-columns: 1fr;
+  }
+
+  .project__card {
+    border-radius: 1rem;
+  }
+
+  .project__card-left {
+    border-radius: 1rem;
+  }
+
+  .project__image {
+    display: none;
+  }
+
+  .project__image img {
+    display: none;
+  }
+
+  .project__image-left img {
+    display: none;
+  }
+
+  .skills {
+    padding: 2rem 1rem;
+  }
+
+  .skill-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .skill {
+    width: 18rem;
+  }
+
+  .footer {
+    display: none;
+  }
+}
