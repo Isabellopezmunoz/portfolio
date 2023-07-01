@@ -1,8 +1,4 @@
 @media (max-width: 767px) {
-  .section::before {
-    display: none;
-  }
-
   .header {
     grid-template-columns: 1fr;
   }
