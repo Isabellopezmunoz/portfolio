@@ -3,6 +3,10 @@
     grid-template-columns: 1fr;
   }
 
+  .header .detail {
+    padding: 5rem 2rem;
+  }
+
   .header .aboutme nav {
     display: none;
   }
