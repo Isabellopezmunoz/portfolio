@@ -11,36 +11,25 @@
     display: none;
   }
 
+/* ----------------------------projects-------------------------------- */
   .projects__main {
     grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 1rem;
   }
 
   .projects__cards {
-    width: 25rem;
-    height: 25rem;
-    grid-template-columns: 1fr;
-  }
-
-  .project__card {
-    border-radius: 1rem;
-  }
-
-  .project__card-left {
-    border-radius: 1rem;
+    width: 40rem;
+    height: 30rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
   }
 
   .project__image {
-    display: none;
+    height: 30rem;
   }
 
-  .project__image img {
-    display: none;
-  }
-
-  .project__image-left img {
-    display: none;
-  }
-
+  /* ----------------------------skills------------------------------ */
   .skills {
     padding: 2rem 1rem;
   }
