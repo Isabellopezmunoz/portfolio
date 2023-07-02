@@ -16,7 +16,7 @@
   }
 
   .projects__cards {
-    width: 20rem;
+    width: 25rem;
     height: 25rem;
     grid-template-columns: 1fr;
   }
