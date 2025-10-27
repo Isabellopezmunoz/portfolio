@@ -1,0 +1,55 @@
+@media (max-width: 767px) {
+  .header {
+    grid-template-columns: 1fr;
+  }
+
+  .header .detail {
+    padding: 5rem 2rem;
+  }
+
+  .header .aboutme nav {
+    display: none;
+  }
+
+  .profile {
+    display: none;
+  }
+
+/* ----------------------------projects-------------------------------- */
+  .projects__main {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .projects__cards {
+    width: 40rem;
+    height: 30rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+
+  .project__image {
+    height: 30rem;
+  }
+
+  /* ----------------------------skills------------------------------ */
+  .skills {
+    padding: 2rem 1rem;
+  }
+
+  .skill-list {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .skill {
+    width: 18rem;
+  }
+
+  .footer {
+    display: none;
+  }
+}
