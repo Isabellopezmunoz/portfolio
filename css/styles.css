@@ -42,8 +42,10 @@ body {
 .button {
   display: inline-flex;
   justify-content: center;
+  align-items: center;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
 }
 
 .button.primary {
@@ -52,10 +54,15 @@ body {
 
 .button.outline {
   border: 1px solid var(--color-dark);
+  background: transparent;
 }
 
 .button.rounded {
   border-radius: 2rem;
+}
+
+.button:hover {
+  opacity: 0.8;
 }
 
 .font-title {
@@ -97,14 +104,15 @@ body {
 .header {
   display: grid;
   grid-template-columns: auto 50rem;
+  height: 30rem;
 }
 
 .header .detail {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  padding: 8rem;
+  gap: 2.5rem;
+  padding: 5rem 6rem;
 }
 
 .role {
@@ -144,11 +152,11 @@ body {
 
 .header .aboutme nav ul {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .header .aboutme nav ul li {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
@@ -164,14 +172,14 @@ body {
   background-size: cover;
 }
 
-
 /* ---------------------------------projects--------------------------------- */
 
 .projects__main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 2rem 8rem;
-  gap: 2rem 0;
+  row-gap: 4rem;
+  column-gap: 2rem;
   justify-items: center;
 }
 
@@ -192,6 +200,7 @@ body {
   gap: 2rem;
   background: white;
   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  z-index: 1;
 }
 
 .project__card-left {
@@ -204,6 +213,35 @@ body {
   gap: 2rem;
   background: white;
   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+/* 🔹 Onuba prisiones */
+.project__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.project__links a {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  border: 1.5px solid var(--color-dark);
+  border-radius: 3rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--color-dark);
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.project__links a:hover {
+  background: var(--color-yellow);
+  border-color: var(--color-yellow);
+  color: var(--color-dark);
+  transform: translateY(-2px);
 }
 
 .project__image {
@@ -226,6 +264,7 @@ body {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
+
 /* ----------------------------------------------Skills------------------------------------------- */
 .skills {
   padding: 2rem;
@@ -233,9 +272,10 @@ body {
 
 .skill-list {
   display: grid;
-  gap: 2rem 0;
   grid-template-columns: repeat(4, 1fr);
-  padding: 0 16rem;
+  row-gap: 4rem;
+  column-gap: 2rem;
+  justify-items: center;
 }
 
 .skill {
@@ -270,4 +310,113 @@ body {
   position: absolute;
   bottom: 1rem;
   left: 45%;
+}
+
+/* ---------------------------- Mobile ---------------------------- */
+@media (max-width: 767px) {
+  .header {
+    grid-template-columns: 1fr;
+  }
+
+  .header .detail {
+    padding: 5rem 2rem;
+  }
+
+  .header .aboutme nav {
+    display: none;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .projects__main {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .projects__cards {
+    width: 40rem;
+    height: 30rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+
+  .project__image {
+    height: 30rem;
+  }
+
+  .skills {
+    padding: 2rem 1rem;
+  }
+
+  .skill-list {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .skill {
+    width: 18rem;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+/* ---------------------------- Tablet ---------------------------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .projects__main {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .header .aboutme nav {
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+  }
+}
+
+/* ------------------- NAV UNDERLINE ANIMATION ------------------- */
+.header .aboutme nav ul li a {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+  font-weight: bold;
+  color: var(--color-dark);
+  transition: color 0.3s ease;
+}
+
+/* Línea animada (degradado amarillo→verde) */
+.header .aboutme nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 0.2rem;
+  background: linear-gradient(90deg, var(--color-dark), var(--color-dark-200));
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.header .aboutme nav ul li a:hover::after,
+.header .aboutme nav ul li a:focus::after {
+  width: 100%;
+}
+
+.header .aboutme nav ul li a:hover {
+  color: var(--color-dark-200);
 }

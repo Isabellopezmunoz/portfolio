@@ -1,187 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css" media="screen">
-  <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px) and (max-width: 1024px)">
-  <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 767px)">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" media="screen">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 767px)">
+  </head>
 
-  <!-----------------about me section ------------->
-  <header class="header">
-    <section class="detail">
-      <p class="role">
-        Frontend Developer
-      </p>
-      <h1 class="title">
-        Hola, mi nombre es Isabel López
-      </h1>
-      <p class="description">
-        Soy una persona que está en constante aprendizaje,
-        proactiva y con ganas de aprender.
-        Y gracias a ello llevo sumergida en el mundo
-         de la programación desde hace 2 años.
-      </p>
-      <div class="social">
-        <a class="button primary" href="mailto:bel.lopez.code@gmail.com" target="__blank">Contact</a>
-        <a class="button outline" href="https://www.linkedin.com/in/isabel-l%C3%B3pez-602b90144/" target="__blank">LinkedIn</a>
+  <body>
+    <header class="header">
+      <section class="detail">
+        <p class="role">
+          Frontend Developer
+        </p>
+        <h1 class="title">
+          Hola, mi nombre es Isabel López
+        </h1>
+        <p class="description">
+          Soy una persona curiosa y en constante aprendizaje. Me apasiona el desarrollo frontend y disfruto creando interfaces que combinan funcionalidad y una buena experiencia de usuario.
+        </p>
+        <div class="social">
+          <a class="button primary" href="mailto:bel.lopez.code@gmail.com" target="__blank">Contact</a>
+          <a class="button outline" href="https://www.linkedin.com/in/isabel-l%C3%B3pez-602b90144/" target="__blank">LinkedIn</a>
+        </div>
+      </section>
+      <div class="aboutme">
+        <nav>
+          <ul>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="profile">
+          <figure></figure>
+        </div>
       </div>
-    </section>
-    <div class="aboutme">
-      <nav>
-        <ul>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="profile">
-        <figure>
-        </figure>
+    </header>
+
+    <!-- 🔹 PROYECTOS ACTUALIZADOS -->
+    <div id="projects" class="projects">
+      <h2 class="section font-title">Projects</h2>
+      <div class="projects__main">
+
+        <!-- Onuba prisiones -->
+        <div class="projects__cards">
+          <div class="project__card-left">
+            <p class="font-subtitle">Onuba prisiones</p>
+            <p class="font-paragraph">
+              Aplicación web SPA para la preparación de oposiciones para funcionarios de prisiones.
+            </p>
+            <div class="project__links">
+              <a class="button outline rounded" href="https://backoffice.onubaprisiones.app" target="__blank">Backoffice</a>
+              <a class="button outline rounded" href="https://academia.onubaprisiones.app" target="__blank">Academia</a>
+              <a class="button outline rounded" href="https://landing.onubaprisiones.app" target="__blank">Landing</a>
+            </div>
+          </div>
+          <figure class="project__image-left">
+            <img src="./assets/onuba.jpg" alt="onuba-prisiones-image">
+          </figure>
+        </div>
+
+        <!-- Yamp -->
+        <div class="projects__cards">
+          <figure class="project__image">
+            <img src="./assets/yamp.jpg" alt="yamp-image">
+          </figure>
+          <div class="project__card">
+            <p class="font-subtitle">Yamp</p>
+            <p class="font-paragraph">
+              Proyecto en el que participé en la migración a Nuxt 3 y en el desarrollo de una solución de email marketing interactivo con IA y AMP.
+            </p>
+            <div class="project__links">
+              <a class="button outline rounded" href="https://admin-nui.yamp.app/auth/login" target="__blank">Proyecto</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Boxbuddy -->
+        <div class="projects__cards">
+          <div class="project__card-left">
+            <p class="font-subtitle">Boxbuddy</p>
+            <p class="font-paragraph">
+              Landing page responsive, optimizada para SEO y conversión, desarrollada con Nuxt 3 y TailwindCSS
+              para la promoción de la aplicación Boxbuddy.
+            </p>
+            <div class="project__links">
+              <a class="button outline rounded" href="https://www.boxbuddy.app" target="__blank">Proyecto</a>
+            </div>
+          </div>
+          <figure class="project__image-left">
+            <img src="https://cms.boxbuddy.app/assets/07099137-f147-44ad-ae2c-cbfbea078285.jpg" alt="boxbuddy-image">
+          </figure>
+        </div>
+
+        <!-- Bridup -->
+        <div class="projects__cards">
+          <figure class="project__image">
+            <img src="./assets/bridup.jpeg" alt="bridup-image">
+          </figure>
+          <div class="project__card">
+            <p class="font-subtitle">Bridup</p>
+            <p class="font-paragraph">
+              Landing page creada con Nuxt 3, PrimeVue y TailwindCSS para la promoción del proyecto Bridup.
+            </p>
+            <div class="project__links">
+              <a class="button outline rounded" href="https://bridup.com"" target="__blank">Proyecto</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </header>
 
-  <!-- project -->
-  <div id="projects" class="projects">
-    <h2 class="section font-title">Projects</h2>
-    <div class="projects__main">
-      <div class="projects__cards">
-        <div class="project__card-left">
-          <p class="font-subtitle">Personality</p>
-          <p class="font-paragraph">Aplicación web SPA para
-            la gestión de las finanzas y objetivos personales.
-          </p>
-          <a class="button outline rounded" href="https://personality.jscodelab.com" target="__blank">Proyecto</a>
-        </div>
-        <figure class="project__image-left">
-          <img src="./assets/personality.jpg" alt="personality-image">
+    <!-- 🔹 SKILLS (SIN CAMBIOS) -->
+    <div id="skills" class="skills">
+      <h2 class="section font-title">Skills & Tools</h2>
+      <div class="skill-list">
+        <figure class="skill">
+          <img src="./assets/html-5.jpeg" alt="html5" height="100" width="100">
+          <figcaption>HTML 5</figcaption>
         </figure>
-      </div>
-
-      <div class="projects__cards">
-        <div class="project__card-left">
-          <p class="font-subtitle">Onuba prisiones</p>
-          <p class="font-paragraph">Aplicación web SPA para la
-            preparación de oposiciones para funcionarios de prisiones.
-          </p>
-          <a class="button outline rounded" href="https://backoffice.onubaprisiones.app" target="__blank">Proyecto</a>
-        </div>
-        <figure class="project__image-left">
-          <img src="./assets/prision.jpg" alt="onuba-prisiones-image">
-        </figure>
-      </div>
-
-      <div class="projects__cards">
-        <figure class="project__image">
-          <img src="./assets/myshopper.jpg" alt="myShopper-image">
-        </figure>
-        <div class="project__card">
-          <p class="font-subtitle">My Shopper</p>
-          <p class="font-paragraph">Aplicación web
-            SPA para el control  de compras  personales.
-          </p>
-          <a class="button outline rounded" href="https://myshopper.slow-soul.com" target="__blank">Proyecto</a>
-        </div>
-      </div>
-
-      <div class="projects__cards">
-        <figure class="project__image">
-          <img src="./assets/blog.jpg" alt="slow-soul-image">
-        </figure>
-        <div class="project__card">
-          <p class="font-subtitle">Slow Soul</p>
-          <p class="font-paragraph">Blog personal en el que hablo acerca de sostenibilidad y consumo responsable.
-            Está realizado  con wordpress.
-          </p>
-          <a class="button outline rounded" href="https://slow-soul.com" target="__blank">Proyecto</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- skills -->
-  <div id="skills" class="skills">
-    <h2 class="section font-title">Skills & Tools</h2>
-    <div class="skill-list">
-      <figure class="skill">
-        <img src="./assets/html-5.jpeg" alt="html5" height="100" width="100">
-        <figcaption>HTML 5</figcaption>
-      </figure>
-
-      <figure class="skill">
-        <img src="./assets/css3.png" alt="html5" height="100" width="100">
-        <figcaption>CSS 3</figcaption>
-      </figure>
-
-      <figure class="skill">
-        <img src="./assets/js.png" alt="html5" height="100" width="100">
-        <figcaption>Js</figcaption>
-      </figure>
-
-       <figure class="skill">
-        <img src="./assets/axios.png" alt="html5" height="100" width="100">
-        <figcaption>Axios</figcaption>
-      </figure>
-
-       <figure class="skill">
-        <img src="./assets/vue.png" alt="html5" height="100" width="100">
-        <figcaption>Vue Js</figcaption>
-      </figure>
-
-       <figure class="skill">
-        <img src="./assets/Swagger-logo.png" alt="html5" height="100" width="100">
-        <figcaption>Swagger</figcaption>
-      </figure>
-
-       <figure class="skill">
-        <img src="./assets/figma.png" alt="html5" height="100" width="100">
-        <figcaption>Figmma</figcaption>
-      </figure>
-
-       <figure class="skill">
-        <img src="./assets/vercel.png" alt="html5" height="100" width="100">
-        <figcaption>Vercel</figcaption>
-      </figure>
-
-      <figure class="skill">
-        <img src="./assets/typescript.svg" alt="html5" height="100" width="100">
-        <figcaption>TypeScript</figcaption>
-      </figure>
-
-      <figure class="skill">
-        <img src="./assets/api rest.png" alt="html5" height="100" width="100">
-        <figcaption>API REST</figcaption>
-      </figure>
-
-      <figure class="skill">
-        <img src="./assets/Git.png" alt="html5" height="100" width="100">
-        <figcaption>GIT</figcaption>
-      </figure>
 
         <figure class="skill">
-        <img src="./assets/postcss.png" alt="html5" height="100" width="100">
-        <figcaption>Postcss</figcaption>
-      </figure>
+          <img src="./assets/css3.png" alt="html5" height="100" width="100">
+          <figcaption>CSS 3</figcaption>
+        </figure>
+
+        <figure class="skill">
+          <img src="./assets/js.png" alt="html5" height="100" width="100">
+          <figcaption>Js</figcaption>
+        </figure>
+
+        <figure class="skill">
+          <img src="./assets/axios.png" alt="html5" height="100" width="100">
+          <figcaption>Axios</figcaption>
+        </figure>
+
+        <figure class="skill">
+          <img src="./assets/vue.png" alt="html5" height="100" width="100">
+          <figcaption>Vue Js</figcaption>
+        </figure>
+
+        <figure class="skill">
+          <img src="./assets/Swagger-logo.png" alt="html5" height="100" width="100">
+          <figcaption>Swagger</figcaption>
+        </figure>
+
+        <figure class="skill">
+          <img src="./assets/figma.png" alt="html5" height="100" width="100">
+          <figcaption>Figmma</figcaption>
+        </figure>
+
+        <figure class="skill">
+          <img src="./assets/vercel.png" alt="html5" height="100" width="100">
+          <figcaption>Vercel</figcaption>
+        </figure>
+
+        <figure class="skill">
+          <img src="./assets/typescript.svg" alt="html5" height="100" width="100">
+          <figcaption>TypeScript</figcaption>
+        </figure>
+
+        <figure class="skill">
+          <img src="./assets/api rest.png" alt="html5" height="100" width="100">
+          <figcaption>API REST</figcaption>
+        </figure>
+
+        <figure class="skill">
+          <img src="./assets/Git.png" alt="html5" height="100" width="100">
+          <figcaption>GIT</figcaption>
+        </figure>
+
+        <figure class="skill">
+          <img src="./assets/postcss.png" alt="html5" height="100" width="100">
+          <figcaption>Postcss</figcaption>
+        </figure>
+      </div>
     </div>
 
-  </div>
-
-  <div class="footer">
-    <p>2024 - Isabel López</p>
-  </div>
-</body>
+    <div class="footer">
+      <p>2025 - Isabel López</p>
+    </div>
+  </body>
 </html>
