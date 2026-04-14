@@ -1,198 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css" media="screen">
-    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px) and (max-width: 1024px)">
-    <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 767px)">
-  </head>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Isabel López, Frontend Developer especializada en Vue.js, Nuxt 3, TypeScript y aplicaciones web.">
+  <title>Isabel López — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
 
-  <body>
-    <header class="header">
-      <section class="detail">
-        <p class="role">
-          Frontend Developer
-        </p>
-        <h1 class="title">
-          Hola, mi nombre es Isabel López
-        </h1>
-        <p class="description">
-          Soy una persona curiosa y en constante aprendizaje. Me apasiona el desarrollo frontend y disfruto creando interfaces que combinan funcionalidad y una buena experiencia de usuario.
-        </p>
-        <div class="social">
-          <a class="button primary" href="mailto:bel.lopez.code@gmail.com" target="__blank">Contact</a>
-          <a class="button outline" href="https://www.linkedin.com/in/isabel-l%C3%B3pez-602b90144/" target="__blank">LinkedIn</a>
-        </div>
-      </section>
-      <div class="aboutme">
-        <nav>
-          <ul>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="profile">
-          <figure></figure>
-        </div>
-      </div>
-    </header>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__logo">IL.</a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="mailto:bel.lopez.code@gmail.com" class="nav__cta">Contacto</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-    <!-- 🔹 PROYECTOS ACTUALIZADOS -->
-    <div id="projects" class="projects">
-      <h2 class="section font-title">Projects</h2>
-      <div class="projects__main">
-
-        <!-- Onuba prisiones -->
-        <div class="projects__cards">
-          <div class="project__card-left">
-            <p class="font-subtitle">Onuba prisiones</p>
-            <p class="font-paragraph">
-              Aplicación web SPA para la preparación de oposiciones para funcionarios de prisiones.
-            </p>
-            <div class="project__links">
-              <a class="button outline rounded" href="https://backoffice.onubaprisiones.app" target="__blank">Backoffice</a>
-              <a class="button outline rounded" href="https://academia.onubaprisiones.app" target="__blank">Academia</a>
-              <a class="button outline rounded" href="https://landing.onubaprisiones.app" target="__blank">Landing</a>
-            </div>
-          </div>
-          <figure class="project__image-left">
-            <img src="./assets/onuba.jpg" alt="onuba-prisiones-image">
-          </figure>
-        </div>
-
-        <!-- Yamp -->
-        <div class="projects__cards">
-          <figure class="project__image">
-            <img src="./assets/yamp.jpg" alt="yamp-image">
-          </figure>
-          <div class="project__card">
-            <p class="font-subtitle">Yamp</p>
-            <p class="font-paragraph">
-              Proyecto en el que participé en la migración a Nuxt 3 y en el desarrollo de una solución de email marketing interactivo con IA y AMP.
-            </p>
-            <div class="project__links">
-              <a class="button outline rounded" href="https://admin-nui.yamp.app/auth/login" target="__blank">Proyecto</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Boxbuddy -->
-        <div class="projects__cards">
-          <div class="project__card-left">
-            <p class="font-subtitle">Boxbuddy</p>
-            <p class="font-paragraph">
-              Landing page responsive, optimizada para SEO y conversión, desarrollada con Nuxt 3 y TailwindCSS
-              para la promoción de la aplicación Boxbuddy.
-            </p>
-            <div class="project__links">
-              <a class="button outline rounded" href="https://www.boxbuddy.app" target="__blank">Proyecto</a>
-            </div>
-          </div>
-          <figure class="project__image-left">
-            <img src="https://cms.boxbuddy.app/assets/07099137-f147-44ad-ae2c-cbfbea078285.jpg" alt="boxbuddy-image">
-          </figure>
-        </div>
-
-        <!-- Bridup -->
-        <div class="projects__cards">
-          <figure class="project__image">
-            <img src="./assets/bridup.jpeg" alt="bridup-image">
-          </figure>
-          <div class="project__card">
-            <p class="font-subtitle">Bridup</p>
-            <p class="font-paragraph">
-              Landing page creada con Nuxt 3, PrimeVue y TailwindCSS para la promoción del proyecto Bridup.
-            </p>
-            <div class="project__links">
-              <a class="button outline rounded" href="https://bridup.com"" target="__blank">Proyecto</a>
-            </div>
-          </div>
-        </div>
-
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">Frontend Developer</p>
+      <h1 class="hero__name">Isabel<br>López</h1>
+      <p class="hero__tagline">
+        Creo interfaces con propósito.<br>
+        Me importa el detalle, la experiencia y el código limpio.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--gold" href="mailto:bel.lopez.code@gmail.com" target="_blank" rel="noopener noreferrer">Contacto</a>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/isabel-l%C3%B3pez-602b90144/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
       </div>
     </div>
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__ring hero__ring--1"></div>
+      <div class="hero__ring hero__ring--2"></div>
+      <div class="hero__ring hero__ring--3"></div>
 
-    <!-- 🔹 SKILLS (SIN CAMBIOS) -->
-    <div id="skills" class="skills">
-      <h2 class="section font-title">Skills & Tools</h2>
-      <div class="skill-list">
-        <figure class="skill">
-          <img src="./assets/html-5.jpeg" alt="html5" height="100" width="100">
-          <figcaption>HTML 5</figcaption>
-        </figure>
+      <!-- Núcleo central -->
+      <div class="hero__core"></div>
 
-        <figure class="skill">
-          <img src="./assets/css3.png" alt="html5" height="100" width="100">
-          <figcaption>CSS 3</figcaption>
-        </figure>
+      <!-- Satélites que orbitan -->
+      <div class="hero__orbit hero__orbit--1">
+        <div class="hero__satellite"></div>
+      </div>
+      <div class="hero__orbit hero__orbit--2">
+        <div class="hero__satellite hero__satellite--sm"></div>
+      </div>
 
-        <figure class="skill">
-          <img src="./assets/js.png" alt="html5" height="100" width="100">
-          <figcaption>Js</figcaption>
-        </figure>
+      <!-- Puntos flotantes -->
+      <div class="hero__dot hero__dot--1"></div>
+      <div class="hero__dot hero__dot--2"></div>
+      <div class="hero__dot hero__dot--3"></div>
 
-        <figure class="skill">
-          <img src="./assets/axios.png" alt="html5" height="100" width="100">
-          <figcaption>Axios</figcaption>
-        </figure>
+      <!-- Cruces decorativas -->
+      <div class="hero__cross hero__cross--1"></div>
+      <div class="hero__cross hero__cross--2"></div>
+    </div>
+  </section>
 
-        <figure class="skill">
-          <img src="./assets/vue.png" alt="html5" height="100" width="100">
-          <figcaption>Vue Js</figcaption>
-        </figure>
-
-        <figure class="skill">
-          <img src="./assets/Swagger-logo.png" alt="html5" height="100" width="100">
-          <figcaption>Swagger</figcaption>
-        </figure>
-
-        <figure class="skill">
-          <img src="./assets/figma.png" alt="html5" height="100" width="100">
-          <figcaption>Figmma</figcaption>
-        </figure>
-
-        <figure class="skill">
-          <img src="./assets/vercel.png" alt="html5" height="100" width="100">
-          <figcaption>Vercel</figcaption>
-        </figure>
-
-        <figure class="skill">
-          <img src="./assets/typescript.svg" alt="html5" height="100" width="100">
-          <figcaption>TypeScript</figcaption>
-        </figure>
-
-        <figure class="skill">
-          <img src="./assets/api rest.png" alt="html5" height="100" width="100">
-          <figcaption>API REST</figcaption>
-        </figure>
-
-        <figure class="skill">
-          <img src="./assets/Git.png" alt="html5" height="100" width="100">
-          <figcaption>GIT</figcaption>
-        </figure>
-
-        <figure class="skill">
-          <img src="./assets/postcss.png" alt="html5" height="100" width="100">
-          <figcaption>Postcss</figcaption>
-        </figure>
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__left">
+          <span class="label">Sobre mí</span>
+          <h2 class="about__title">Apasionada del frontend<br>y los detalles que importan</h2>
+          <p class="about__text">
+            Soy una persona curiosa y en constante aprendizaje. Me apasiona el desarrollo frontend
+            y disfruto creando interfaces que combinan funcionalidad y una buena experiencia de usuario.
+            Trabajo con Vue.js, Nuxt 3 y TypeScript, y me gusta llevar los proyectos desde el diseño hasta producción.
+          </p>
+        </div>
+        <div class="about__stats">
+          <div class="stat-card">
+            <span class="stat-card__num">3+</span>
+            <span class="stat-card__label">Años de experiencia</span>
+          </div>
+          <div class="stat-card stat-card--accent">
+            <span class="stat-card__num">4</span>
+            <span class="stat-card__label">Proyectos en producción</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__num">12+</span>
+            <span class="stat-card__label">Tecnologías</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__num">∞</span>
+            <span class="stat-card__label">Ganas de aprender</span>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="footer">
-      <p>2025 - Isabel López</p>
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-head">
+        <span class="label label--lilac">Proyectos</span>
+        <h2>Lo que he construido</h2>
+      </div>
+      <div class="projects__grid">
+
+        <article class="card">
+          <div class="card__img">
+            <img src="./assets/onuba.jpg" alt="Onuba Prisiones">
+            <span class="card__badge">Vue.js · SPA</span>
+          </div>
+          <div class="card__body">
+            <h3>Onuba Prisiones</h3>
+            <p>Aplicación web SPA para la preparación de oposiciones para funcionarios de prisiones.</p>
+            <div class="card__links">
+              <a href="https://backoffice.onubaprisiones.app" target="_blank" rel="noopener noreferrer">Backoffice ↗</a>
+              <a href="https://academia.onubaprisiones.app" target="_blank" rel="noopener noreferrer">Academia ↗</a>
+              <a href="https://landing.onubaprisiones.app" target="_blank" rel="noopener noreferrer">Landing ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__img">
+            <img src="./assets/yamp.jpg" alt="Yamp">
+            <span class="card__badge">Nuxt 3 · IA · AMP</span>
+          </div>
+          <div class="card__body">
+            <h3>Yamp</h3>
+            <p>Migración de Vue 2 a Nuxt 3 y desarrollo de una solución de email marketing interactivo con IA y AMP.</p>
+            <div class="card__links">
+              <a href="https://admin-nui.yamp.app/auth/login" target="_blank" rel="noopener noreferrer">Ver proyecto ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__img">
+            <img src="./assets/boxbuddy.svg" alt="Boxbuddy">
+            <span class="card__badge">CrossFit · Nuxt 3 · Tailwind</span>
+          </div>
+          <div class="card__body">
+            <h3>Boxbuddy</h3>
+            <p>Landing page responsive para un box de CrossFit, optimizada para SEO y conversión, desarrollada con Nuxt 3 y TailwindCSS.</p>
+            <div class="card__links">
+              <a href="https://www.boxbuddy.app" target="_blank" rel="noopener noreferrer">Ver proyecto ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__img">
+            <img src="./assets/bridup.jpeg" alt="Bridup">
+            <span class="card__badge">Nuxt 3 · PrimeVue</span>
+          </div>
+          <div class="card__body">
+            <h3>Bridup</h3>
+            <p>Landing page creada con Nuxt 3, PrimeVue y TailwindCSS para la promoción del proyecto Bridup.</p>
+            <div class="card__links">
+              <a href="https://bridup.com" target="_blank" rel="noopener noreferrer">Ver proyecto ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
     </div>
-  </body>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-head">
+        <span class="label label--light">Tecnologías</span>
+        <h2 class="skills__title">Skills & Tools</h2>
+      </div>
+      <div class="skills__grid">
+        <div class="skill"><img src="./assets/html-5.jpeg" alt="HTML5"><span>HTML 5</span></div>
+        <div class="skill"><img src="./assets/css3.png" alt="CSS3"><span>CSS 3</span></div>
+        <div class="skill"><img src="./assets/js.png" alt="JavaScript"><span>JavaScript</span></div>
+        <div class="skill"><img src="./assets/typescript.svg" alt="TypeScript"><span>TypeScript</span></div>
+        <div class="skill"><img src="./assets/vue.png" alt="Vue.js"><span>Vue.js</span></div>
+        <div class="skill"><img src="./assets/axios.png" alt="Axios"><span>Axios</span></div>
+        <div class="skill"><img src="./assets/api rest.png" alt="API REST"><span>API REST</span></div>
+        <div class="skill"><img src="./assets/Swagger-logo.png" alt="Swagger"><span>Swagger</span></div>
+        <div class="skill"><img src="./assets/figma.png" alt="Figma"><span>Figma</span></div>
+        <div class="skill"><img src="./assets/Git.png" alt="Git"><span>Git</span></div>
+        <div class="skill"><img src="./assets/vercel.png" alt="Vercel"><span>Vercel</span></div>
+        <div class="skill"><img src="./assets/postcss.png" alt="PostCSS"><span>PostCSS</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__logo">Isabel López</p>
+      <p class="footer__copy">© 2026 · Frontend Developer</p>
+      <div class="footer__links">
+        <a href="mailto:bel.lopez.code@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+        <a href="https://www.linkedin.com/in/isabel-l%C3%B3pez-602b90144/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav--scrolled', window.scrollY > 40);
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      hamburger.classList.remove('open');
+    }));
+  </script>
+
+</body>
 </html>
