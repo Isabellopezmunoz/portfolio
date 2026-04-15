@@ -29,42 +29,19 @@
 
   <!-- HERO -->
   <section id="hero" class="hero">
-    <div class="hero__inner">
+    <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+    <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+    <div class="hero__content">
       <p class="hero__eyebrow">Frontend Developer</p>
-      <h1 class="hero__name">Isabel<br>López</h1>
+      <h1 class="hero__name">Isabel López</h1>
       <p class="hero__tagline">
-        Creo interfaces con propósito.<br>
-        Me importa el detalle, la experiencia y el código limpio.
+        Creo interfaces con propósito. Me importa el detalle,<br>
+        la experiencia y el código limpio.
       </p>
       <div class="hero__actions">
-        <a class="btn btn--gold" href="mailto:bel.lopez.code@gmail.com" target="_blank" rel="noopener noreferrer">Contacto</a>
+        <a class="btn btn--primary" href="mailto:bel.lopez.code@gmail.com" target="_blank" rel="noopener noreferrer">Contacto</a>
         <a class="btn btn--ghost" href="https://www.linkedin.com/in/isabel-l%C3%B3pez-602b90144/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
       </div>
-    </div>
-    <div class="hero__visual" aria-hidden="true">
-      <div class="hero__ring hero__ring--1"></div>
-      <div class="hero__ring hero__ring--2"></div>
-      <div class="hero__ring hero__ring--3"></div>
-
-      <!-- Núcleo central -->
-      <div class="hero__core"></div>
-
-      <!-- Satélites que orbitan -->
-      <div class="hero__orbit hero__orbit--1">
-        <div class="hero__satellite"></div>
-      </div>
-      <div class="hero__orbit hero__orbit--2">
-        <div class="hero__satellite hero__satellite--sm"></div>
-      </div>
-
-      <!-- Puntos flotantes -->
-      <div class="hero__dot hero__dot--1"></div>
-      <div class="hero__dot hero__dot--2"></div>
-      <div class="hero__dot hero__dot--3"></div>
-
-      <!-- Cruces decorativas -->
-      <div class="hero__cross hero__cross--1"></div>
-      <div class="hero__cross hero__cross--2"></div>
     </div>
   </section>
 
@@ -107,7 +84,7 @@
   <section id="projects" class="projects">
     <div class="container">
       <div class="section-head">
-        <span class="label label--lilac">Proyectos</span>
+        <span class="label">Proyectos</span>
         <h2>Lo que he construido</h2>
       </div>
       <div class="projects__grid">
@@ -144,8 +121,8 @@
 
         <article class="card">
           <div class="card__img">
-            <img src="./assets/boxbuddy.svg" alt="Boxbuddy">
-            <span class="card__badge">CrossFit · Nuxt 3 · Tailwind</span>
+            <img src="https://www.boxbuddy.app/assets/07099137-f147-44ad-ae2c-cbfbea078285.jpg" alt="Boxbuddy">
+            <span class="card__badge">Nuxt 3 · Tailwind</span>
           </div>
           <div class="card__body">
             <h3>Boxbuddy</h3>
@@ -178,22 +155,51 @@
   <section id="skills" class="skills">
     <div class="container">
       <div class="section-head">
-        <span class="label label--light">Tecnologías</span>
-        <h2 class="skills__title">Skills & Tools</h2>
+        <span class="label">Tecnologías</span>
+        <h2>Skills & Tools</h2>
       </div>
-      <div class="skills__grid">
-        <div class="skill"><img src="./assets/html-5.jpeg" alt="HTML5"><span>HTML 5</span></div>
-        <div class="skill"><img src="./assets/css3.png" alt="CSS3"><span>CSS 3</span></div>
-        <div class="skill"><img src="./assets/js.png" alt="JavaScript"><span>JavaScript</span></div>
-        <div class="skill"><img src="./assets/typescript.svg" alt="TypeScript"><span>TypeScript</span></div>
-        <div class="skill"><img src="./assets/vue.png" alt="Vue.js"><span>Vue.js</span></div>
-        <div class="skill"><img src="./assets/axios.png" alt="Axios"><span>Axios</span></div>
-        <div class="skill"><img src="./assets/api rest.png" alt="API REST"><span>API REST</span></div>
-        <div class="skill"><img src="./assets/Swagger-logo.png" alt="Swagger"><span>Swagger</span></div>
-        <div class="skill"><img src="./assets/figma.png" alt="Figma"><span>Figma</span></div>
-        <div class="skill"><img src="./assets/Git.png" alt="Git"><span>Git</span></div>
-        <div class="skill"><img src="./assets/vercel.png" alt="Vercel"><span>Vercel</span></div>
-        <div class="skill"><img src="./assets/postcss.png" alt="PostCSS"><span>PostCSS</span></div>
+      <div class="skills__groups">
+        <div class="skill-group">
+          <div class="skill-group__header">
+            <span class="skill-group__label">Frontend</span>
+            <span class="skill-group__count">8</span>
+          </div>
+          <div class="skill-group__items">
+            <span class="skill-tag">HTML 5</span>
+            <span class="skill-tag">CSS 3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Nuxt 3</span>
+            <span class="skill-tag">PrimeVue</span>
+            <span class="skill-tag">Pinia</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group__header">
+            <span class="skill-group__label">Integración</span>
+            <span class="skill-group__count">3</span>
+          </div>
+          <div class="skill-group__items">
+            <span class="skill-tag">API REST</span>
+            <span class="skill-tag">Axios</span>
+            <span class="skill-tag">Swagger</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group__header">
+            <span class="skill-group__label">Diseño & Deploy</span>
+            <span class="skill-group__count">6</span>
+          </div>
+          <div class="skill-group__items">
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">TailwindCSS</span>
+            <span class="skill-tag">PostCSS</span>
+            <span class="skill-tag">Vite</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Vercel</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -215,7 +221,6 @@
     window.addEventListener('scroll', () => {
       nav.classList.toggle('nav--scrolled', window.scrollY > 40);
     });
-
     const hamburger = document.getElementById('hamburger');
     const navLinks  = document.getElementById('navLinks');
     hamburger.addEventListener('click', () => {
